@@ -1,8 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: #fff;
+    // border: solid brown 1px;
+
   }
 
   .container-fluid {
@@ -10,20 +12,20 @@ body {
     border-bottom: solid gray 1px;
   }
 
-  .row {
+  // .row {
     // border: solid blue 1px;
-  }
+  // }
 
-  .col-xl-1 {
+  // .col-xl-1 {
     // border: solid yellow 1px;
-  }
+  // }
 
-  .col-xl-7 {
+  // .col-xl-7 {
     // border: solid yellow 1px;
-  }
-  .col-xl-4 {
+  // }
+  // .col-xl-4 {
     // border: solid yellow 1px;
-  }
+  // }
 
   div.logo {
     text-align: center;
@@ -81,20 +83,37 @@ body {
     // margin: 
   }
 
-  div.row {
+  div.content {
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
+    // border: solid blue 1px;
+    // margin: 0 auto;
+    width: 95vw;
+
   }
   div.image {
+    // border: solid orange 1px;
     display: inline;
+    padding: 0 10px;
   }
 
   div.column {
-    border: solid orange 1px;
+    // border: solid orange 1px;
     margin: 10px 0;
     border-radius: 7px;
   }
 
   img {
     border-radius: 7px;
+
+  }
+  div.column:hover {
+    opacity: 0.5;
+    background: lightgray;
+    }
+
+  div.content {    
+    // border: solid orange 5px;
+    margin: 0 auto;
   }
