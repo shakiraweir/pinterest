@@ -1,0 +1,100 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    margin: 0;
+    background-color: #fff;
+  }
+
+  .container-fluid {
+    // border: solid red 1px;
+    border-bottom: solid gray 1px;
+  }
+
+  .row {
+    // border: solid blue 1px;
+  }
+
+  .col-xl-1 {
+    // border: solid yellow 1px;
+  }
+
+  .col-xl-7 {
+    // border: solid yellow 1px;
+  }
+  .col-xl-4 {
+    // border: solid yellow 1px;
+  }
+
+  div.logo {
+    text-align: center;
+  }
+
+  div.input {
+    // border: solid blue 1px;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #D3D3D3;
+    border-radius: 5px;
+  }
+
+  ul {
+    display: flex
+  }
+  // header {
+  //   border: solid yellow 1px;
+  // }
+
+  // div {
+  //   border: solid yellow 1px;
+  // }
+
+  // nav {
+  //   // display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul {
+    list-style: none;
+  }
+
+  li.nav-item {
+    display: inline;
+  }
+
+  i {
+    // border: solid orange 1px;
+    margin: 0 10px;
+
+  }
+  img{
+    display: block;
+    // margin: 
+  }
+
+  div.row {
+    display: flex;
+    justify-content: space-around;
+  }
+  div.image {
+    display: inline;
+  }
+
+  div.column {
+    border: solid orange 1px;
+    margin: 10px 0;
+    border-radius: 7px;
+  }
+
+  img {
+    border-radius: 7px;
+  }
