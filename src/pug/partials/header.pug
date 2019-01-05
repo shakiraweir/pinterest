@@ -1,27 +1,29 @@
-.container-fluid
-    .row
-        .col-xl-1   
-            div.logo           
-                img.logo(src='../images/favicon.png' alt='logo')
-        .col-xl-7 
-            div.input
-                input(type='text' placeholder='Search')
-        .col-xl-4 
-            ul
-                li.nav-item
-                    a(href='#') Home
-                li.nav-item
-                    a(href='#') Following
-                li.nav-item.icons
-                    i.fa.fa-circle(aria-hidden='true')
-                    
+div.header
+    div.nav 
+        div.logo        
+            i.fab.fa-pinterest.fa-2x
+        div.form-group.has-search
+            span.fa.fa-search.form-control-feedback
+            input.form-control(type='text' placeholder='Search')
+        div.list
+            div#home.nav-item
+                a(href='#') Home
+            div#following.nav-item
+                a(href='#') Following
+            div#friends.nav-item.icons
+                i.fas.fa-user-friends.fa-lg
+            div.user
+                div#user.nav-item.icons
+                    i.fa.fa-circle.fa-lg(aria-hidden='true')
+                div.nav-item.user
                     a(href='#') Shakira
-                    
-                    i.fas.fa-comment-dots
-                    
-                    i.fa.fa-bell(aria-hidden='true')
-                    i.fa.fa-ellipsis-h(aria-hidden='true')
-
+            div.nav-item.icons
+                i.fas.fa-comment-dots.fa-lg
+            div.nav-item.icons
+                i.fa.fa-bell.fa-lg(aria-hidden='true')
+            div.nav-item.icons              
+                i.fa.fa-ellipsis-h.fa-lg(aria-hidden='true')
+    
 
 
             
