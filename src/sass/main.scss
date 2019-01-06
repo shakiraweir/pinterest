@@ -3,7 +3,6 @@
 @import "./partials/content.scss";
 
 body {
-  position: relative;
   background: #fff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -11,105 +10,126 @@ body {
   margin: 0 auto;
 }
 
-  // i {
-    // border: solid orange 1px;
-    // margin: 0 10px;
-
-  // }
-  // input {
-    // width: 100%;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
-    // background-color: #D3D3D3;
-    // border-radius: 5px;
-  // }
-// 
-// div.list {
-  // flex: 1 1 auto;
-// }
-// div.list {
-    // border: solid green 1px;
-  // margin: 15px 10px;
-  // flex: 1 1 auto;
-  // margin-left: 5px;
-// }
-  // li {
-    // border: solid green 1px;
-  // }
-
-  // .container-fluid {
-    // border: solid red 1px;
-    // border-bottom: solid gray 1px;
-  // }
-
-  // .row {
-    // border: solid blue 1px;
-  // }
-
-  // .col-xl-1 {
-    // border: solid yellow 1px;
-    // display: flex;
-    // justify-content: flex-start
-    // text-align: center;
-  // }
-
-  // .col-xl-7 {
-    // border: solid yellow 1px;
-  // }
-  // .col-xl-4 {
-    // border: solid yellow 1px;
-  // }
-
-  // header {
-  //   border: solid yellow 1px;
-  // }
-
-  // div {
-  //   border: solid yellow 1px;
-  // }
-
-  // nav {
-  //   // display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
-
-  img{
-    display: block;
-    // margin: 
+.card-columns {
+  margin: 0 auto;
+  padding-top: 28px;
+  @include media-breakpoint-only(xs) {
+    column-count: 2;
   }
-
-  div.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    // border: solid blue 1px;
-    // margin: 0 auto;
-    width: 95vw;
-
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+    width: 70vw;
   }
-  div.image {
-    // border: solid orange 1px;
-    display: inline;
-    padding: 0 10px;
+  @include media-breakpoint-only(md) {
+    column-count: 3;
+    width: 80vw;
   }
-
-  div.column {
-    // border: solid orange 1px;
-    margin: 10px 0;
-    border-radius: 7px;
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+    width: 85vw;
   }
-
-  img {
-    border-radius: 7px;
-
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+    width: 98vw;
   }
-  div.column:hover {
-    opacity: 0.5;
-    background: lightgray;
-    }
+}
 
-  div.content {    
-    // border: solid orange 5px;
-    margin: 0 auto;
-  }
+.card {
+  position: relative;
+  border: 5px;
+  border-radius: 3%;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s linear; 
+}
+
+.card:hover {
+  background: #e6e6e6;
+  opacity: 0.9;
+  border: none;
+  cursor: zoom-in;
+}
+
+.card-img-top {
+  border-radius: 3%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-group.mb-3 {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  padding: 0 15px;
+  margin-bottom: 7px;
+  visibility: hidden;
+}
+
+.card:hover .input-group.mb-3 {
+  visibility: visible;
+}
+
+.input-group-text {
+  background: #ff0000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.fa-sign-in-alt {
+  display: block;
+  position: absolute;
+  bottom: 85px;
+  right: 16px;
+  background: rgba(38, 38, 38, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.card:hover .fa-sign-in-alt {
+  visibility: visible;
+}
+
+.footer {
+  border: solid purple 2px;
+  float: right;
+  position: relative;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 1px;
+  right: 0.5px;
+  padding: 5px 10px;
+}
+
+.footer-icons .fa {
+  border: solid gray 0.4px;
+  border-bottom: solid lightgray 2px;
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: 10px;
+  color: #404040;
+  background: #fff;
+ } 
+
+ .footer-icons p {
+  border: solid gray 0.4px;
+  border-bottom: solid lightgray 2px;
+  color: #404040;
+  border-radius: 9%;
+  padding: 5px 8px;;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #fff;
+}
