@@ -2,13 +2,8 @@ div.header {
     border-bottom: solid #e6e6e6 0.5px; 
     background: #fff;
     width: 100vw;
-    // border: solid red 3px;
     position: sticky;
     top: 0;
-    // margin-bottom: 30px;
-    // bottom: 0;
-    // height: 100px;
-    z-index: 2;
 }
   
 div.nav {
@@ -17,7 +12,6 @@ div.nav {
     flex: 1 1 auto;
     flex-wrap: nowrap;
     width: 100%;
-    // border: solid blue 3px;
 }
 
 div.logo {
@@ -123,9 +117,9 @@ div.nav-item.user {
         padding: 0 15px;
     }
     #user.nav-item.icons {
-        // padding-top: 3px;
         padding-right: 5px;
     }
+    
     div.user {
         padding-right: 10px;
     }
